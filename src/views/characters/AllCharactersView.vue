@@ -1,16 +1,39 @@
 <template>
   <div class="container">
     <div class="row">
-     <div class="col">
-      <div class="c-characters-wrapper d-flex flex-wrap justify-content-center">
-        <character-component />
-        <character-component />
-        <character-component />
-        <character-component />
-        <character-component />
-        <character-component />
-        <character-component />
-        <character-component />
+     <div class="col-12">
+      <div class="l-grid d-flex flex-wrap justify-content-center">
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
+
+        <div class="l-grid__item">
+          <character-component />
+        </div>
       </div>
      </div>
     </div>
@@ -29,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-characters-wrapper {
+.l-grid {
   gap: 30px;
 }
 </style>
