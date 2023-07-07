@@ -1,6 +1,6 @@
 import { makeGetRequest } from '@/clients/clientWrapper';
 
-const baseURL = process.env.BASE_URL_RICK_AND_MORTY;
+const baseURL = 'https://rickandmortyapi.com/api';
 
 /**
  * Función para obtener el listado de personajes de Rick y Morty

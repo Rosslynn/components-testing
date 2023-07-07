@@ -5,6 +5,9 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
+const baseURL = process.env.BASE_URL_RICK_AND_MORTY;
+console.log({ baseURL }, process.env);
+
 new Vue({
   router,
   store,
