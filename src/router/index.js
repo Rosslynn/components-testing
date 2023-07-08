@@ -18,6 +18,7 @@ const routes = [
       {
         path: ':id',
         name: 'single-character',
+        props: true,
         component: () => import('@/views/characters/SingleCharacterView.vue'),
       },
     ],

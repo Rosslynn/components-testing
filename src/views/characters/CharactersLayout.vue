@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1 class="p-5 text-center">Personajes de Rick y Morty :D</h1>
+    <h1 class="p-5 text-center">
+      <router-link :to="{ name: 'all-characters' }">Personajes de Rick y Morty :D</router-link>
+    </h1>
+
     <div class="border-top border-bottom p-5">
       <router-view />
     </div>
