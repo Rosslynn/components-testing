@@ -7,7 +7,7 @@
     <template v-else>
       <div class="c-single-character-view__header mb-3">
         <div class="c-single-character-view__title mb-4">
-          <p class="h4 mb-4">Estás viendo más información sobre:
+          <p class="h4 mb-4">You are viewing more information about:
             <span class="font-weight-bold">
               {{ character.name }}
             </span>
@@ -21,23 +21,23 @@
 
       <div class="c-single-character-view__body">
         <p class="mb-0">
-          <span class="font-weight-bold">Especie:</span> {{ character.species }}
+          <span class="font-weight-bold">Specie:</span> {{ character.species }}
         </p>
 
         <p class="mb-0">
-          <span class="font-weight-bold">Género:</span> {{ character.gender }}
+          <span class="font-weight-bold">Gender:</span> {{ character.gender }}
         </p>
 
         <p class="mb-0">
-          <span class="font-weight-bold">Origen:</span> {{ character.origin.name }}
+          <span class="font-weight-bold">Origin:</span> {{ character.origin.name }}
         </p>
 
         <p class="mb-0">
-          <span class="font-weight-bold">Estado:</span> {{ character.status }}
+          <span class="font-weight-bold">Status:</span> {{ character.status }}
         </p>
 
         <p class="mb-0">
-          <span class="font-weight-bold">Ubicación:</span> {{ character.location.name }}
+          <span class="font-weight-bold">Location:</span> {{ character.location.name }}
         </p>
       </div>
     </template>
