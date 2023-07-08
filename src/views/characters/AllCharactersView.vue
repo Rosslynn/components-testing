@@ -3,36 +3,8 @@
     <div class="row">
      <div class="col-12">
       <div class="l-grid d-flex flex-wrap justify-content-center">
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
-        </div>
-
-        <div class="l-grid__item">
-          <character-component />
+        <div v-for="character of characters" :key="character.id" class="l-grid__item">
+          <character-component :character="character" />
         </div>
       </div>
      </div>
@@ -42,11 +14,15 @@
 
 <script>
 import CharacterComponent from '@/components/CharacterComponent.vue';
+import { mapState } from 'vuex';
 
 export default {
   name: 'AllCharactersView',
   components: {
     CharacterComponent,
+  },
+  computed: {
+    ...mapState(['characters']),
   },
 };
 </script>
