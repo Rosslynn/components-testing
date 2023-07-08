@@ -14,7 +14,7 @@
 
 <script>
 import CharacterComponent from '@/components/CharacterComponent.vue';
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'AllCharactersView',
@@ -23,6 +23,16 @@ export default {
   },
   computed: {
     ...mapState(['characters']),
+  },
+  async created() {
+    try {
+      await this.setAllCharacters();
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  methods: {
+    ...mapActions(['setAllCharacters']),
   },
 };
 </script>
