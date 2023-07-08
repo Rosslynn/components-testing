@@ -17,6 +17,7 @@ export default new Vuex.Store({
     },
     SET_SINGLE_CHARACTER(state, character) {
       state.character = character;
+      console.log(character);
     },
   },
   actions: {
